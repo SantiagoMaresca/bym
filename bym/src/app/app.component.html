@@ -1,0 +1,189 @@
+<div class="content">
+    <router-outlet>
+        <mat-toolbar>
+            <span>B&M</span>
+            <div class="toolbar" color="primary">
+                <a mat-button href=" home ">home</a>
+
+            </div>
+
+        </mat-toolbar>
+
+    </router-outlet>
+</div>
+<app-slider></app-slider>
+<section class="col-md-11 mt-md-10 mt-5">
+
+
+    <section class="my-5" animateOnScroll animationName="slideInUp">
+
+        <!-- Grid row -->
+        <div class="row " animateOnScroll animationName="slideInUp">
+
+            <!-- Grid column -->
+            <div class="col-lg-3 offset-md-1">
+
+                <!-- Featured image -->
+                <div class="view overlay rounded z-depth-2 mb-lg-4 mb-4">
+                    <img class="img-fluid" src="../assets/inicio.jpg " alt="Sample image">
+                    <a>
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                </div>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-lg-7 offset-md-0.5 ">
+
+
+                <!-- Post title -->
+                <h3 class="font-weight-bold mb-4"><strong>¿Quienes somos?</strong></h3>
+
+                <!-- Excerpt -->
+                <p> Dos profesionales de destacada actividad privada nacional y multinacional actualizados en la normativa actual relativa a Administración de Edificios; diplomados, para ofrecerle de forma entendida y competente, una alternativa de gestión
+                    de alta performance. Para ello, alineamos nuestros objetivos al de nuestros clientes, en beneficio de su propiedad.
+                </p>
+
+
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+    </section>
+
+    <section class="empresa">
+
+
+        <h2>¿Qué ofrecemos?</h2>
+        <div class="text-center my-5" animateOnScroll animationName="bounce">
+            <div class="row ">
+                <div class="col align-self-start offset-md-1 ">
+                    <mat-card class="example-card ">
+                        <i class="fas fa-chart-area fa-3x red-text pr-3 "></i>
+                        <mat-card-header>
+                            <div mat-card-avatar class="example-header-image "></div>
+                            <mat-card-title class="card-title ">Administración de cuentas de forma clara</mat-card-title>
+
+                        </mat-card-header>
+
+                        <mat-card-content>
+                            <p>
+                                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                            </p>
+                        </mat-card-content>
+
+                    </mat-card>
+                </div>
+                <div class="col align-self-center ">
+                    <mat-card class="example-card ">
+                        <i class="far fa-folder-open fa-3x amber-text pr-3 "></i>
+                        <mat-card-header>
+                            <div mat-card-avatar class="example-header-image "></div>
+                            <mat-card-title class="card-title ">Supervisión y control de proveedores </mat-card-title>
+
+                        </mat-card-header>
+
+                        <mat-card-content>
+                            <p>
+                                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                            </p>
+                        </mat-card-content>
+
+                    </mat-card>
+                </div>
+                <div class="col align-self-end ">
+                    <mat-card class="example-card ">
+                        <i class="fas fa-calculator fa-3x indigo-text pr-3 "></i>
+                        <mat-card-header>
+                            <div mat-card-avatar class="example-header-image "></div>
+                            <mat-card-title class="card-title ">Liquidación de Sueldos y Leyes Sociales</mat-card-title>
+
+                        </mat-card-header>
+
+                        <mat-card-content>
+                            <p>
+                                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                            </p>
+                        </mat-card-content>
+
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <h2>Contáctanos</h2>
+
+    <div class='seccionBut' animateOnScroll animationName="slideInLeft">
+        <form [formGroup]="ContactForm " #frmPub="ngForm" (ngSubmit)="sendContact(frmPub)" class="example-form ">
+            <mat-form-field class="example-full-width ">
+                <input matInput placeholder="Name " formControlName="name">
+
+            </mat-form-field>
+            <mat-form-field class="example-full-width ">
+
+                <input matInput placeholder="Email " type="email " name="email " ngModel [email]="true " formControlName="email" [errorStateMatcher]="matcher " required>
+                <mat-error>
+                    Ingrese un email válido
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field class="example-full-width ">
+                <textarea matInput placeholder="Mensaje " formControlName="mensaje"></textarea>
+            </mat-form-field>
+            <button mat-button class="consulta " mat-button type="submit ">Consultar <i class="fas fa-angle-right fa-x "></i></button>
+        </form>
+
+    </div>
+
+</section>
+<!-- Footer -->
+<footer class="page-footer font-small #1565c0 blue darken-3 pt-4 ">
+
+    <!-- Footer Text -->
+    <div class="container-fluid text-center text-md-left ">
+
+        <!-- Grid row -->
+        <div class="row ">
+
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3 ">
+
+                <!-- Content -->
+                <h5 class="text-uppercase font-weight-bold ">B&M Administración de propiedades</h5>
+
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none pb-3 ">
+
+            <!-- Grid column -->
+            <div class="col-md-6 mb-md-0 mb-3 ">
+
+                <!-- Content -->
+                <h5 class="text-uppercase font-weight-bold ">Contacto</h5>
+                <p>Lic Alvaro Maresca 094-920774</p>
+                <p>Cr Juan Carlos Baranda 094-298952</p>
+                <p>barandaymaresca@gmail.com</p>
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Footer Text -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center red-back py-3 ">© 2018 Copyright:
+        <a href="https://mdbootstrap.com/education/angular/ "> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->

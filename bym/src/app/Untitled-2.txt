@@ -1,0 +1,20 @@
+ <h2>¿Quienes somos?</h2>
+
+    <mat-card class=" empresa-card " animateOnScroll animationName="slideInUp">
+        <img src="../assets/inicio.jpg " alt="Photo of a Shiba Inu ">
+
+        <div class="info ">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image "></div>
+
+
+            </mat-card-header>
+
+            <mat-card-content>
+                <p>
+                    Dos profesionales de destacada actividad privada nacional y multinacional actualizados en la normativa actual relativa a Administración de Edificios; diplomados, para ofrecerle de forma entendida y competente, una alternativa de gestión de alta performance.
+                    Para ello, alineamos nuestros objetivos al de nuestros clientes, en beneficio de su propiedad.
+
+                </p>
+            </mat-card-content>
+        </div>
